@@ -1,0 +1,184 @@
+body{
+    background: #100717;
+}
+
+.first{
+    overflow: hidden;
+}
+
+.one{
+    width: 100%;
+    position: relative;
+    color: #EAD0FF;
+    font-family: Sansation Light;
+    text-align: center;
+    font-size: 1.8229vw;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 89%;
+}
+
+.two{
+    width: 100%;
+    position: relative;
+    color: #EACFFF;
+    font-family: Cormorant;
+    text-align: center;
+    font-size: 17.5504vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 89%;
+    text-transform: uppercase;
+    z-index: 2;
+}
+
+.fairy{
+    position: relative;
+    display: flex;
+}
+
+.blue{
+    width: 100%;
+    position: relative;
+    margin-left: -25vw;
+    margin-top: -10vw;
+    animation: bluean 1s infinite;
+}
+
+.pink{
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    margin-left: -25vw;
+    margin-top: -100vw;
+    animation: pinkan 1s infinite;
+}
+
+@keyframes bluean {
+    0%{transform: rotate(0deg);}
+    50%{transform: rotate(-15deg);}
+    100%{transform: rotate(0deg);}
+}
+
+@keyframes pinkan {
+    0%{transform: rotate(0deg);}
+    50%{transform: rotate(15deg);}
+    100%{transform: rotate(0deg);}
+}
+
+.star1, .star2, .star3, .star4{
+    position: relative;
+    height: 10vw;
+    width: 10vw;}
+
+.starone{
+    margin-left: 80vw;
+    margin-top: -80vw;
+    animation: blinker 1s linear infinite;
+}
+
+.startwo{
+    margin-left: 50vw;
+    margin-top: 2vw;
+    animation: blinker 1s linear infinite;
+}
+
+.starthree{
+    margin-left: 10vw;
+    margin-top: 10vw;
+    animation: blinker 1s linear infinite;
+}
+
+.starfour{
+    margin-left: 30vw;
+    margin-top: -9vw;
+    animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+}
+
+.oblako1{
+    margin-top: -5vw;
+    width: 60%;
+    animation: oblacka 7s infinite;
+}
+
+@keyframes oblacka {
+    0%{transform: translateX(-19vw);}
+    50%{transform: translateX(47vw);}
+    100%{transform: translateX(-19vw);}
+}
+
+.fairies{
+    display: flex;
+    flex-direction: column;
+}
+
+.leftf1, .rightf1, .leftf2, .rightf2{
+    margin-top: -10vw;
+}
+
+.leftf1, .leftf2{
+    animation: left1 2s linear infinite;
+}
+
+.rightf1, .rightf2{
+    animation: right1 2s linear infinite;
+}
+
+@keyframes right1 {
+    0%{transform: translateX(-79vw);}
+    100%{transform: translateX(0vw);}
+}
+
+@keyframes left1 {
+    0%{transform: translateX(87vw);}
+    100%{transform: translateX(17vw);}
+}
+
+.leftblue1, .rightpink1, .leftblue2, .rightpink2{
+    width: 100%;
+}
+
+.oblak2{
+    margin-top: -5vw;
+    width: 60%;
+    animation: oblacka2 7s infinite;
+}
+
+@keyframes oblacka2 {
+    0%{transform: translateX(80vw);}
+    50%{transform: translateX(37vw);}
+    100%{transform: translateX(80vw);}
+}
+
+.many{
+    width: 50%;
+}
+
+.manyf{
+    margin-top: -20vw;
+    margin-left: -5vw;
+    animation: mir 1s infinite;
+}
+
+@keyframes mir {
+    0%, 100% { transform: translatex(0%) scalex(-1); }
+    49.99% {  transform: translatex(0%) scalex(-1); }
+    50% { transform: translatex(0%) scalex(1);  }
+    99.99% {  transform: translatex(0%) scalex(1);  }
+}
+
+.posled{
+    margin-top: -20vw;
+    height: 55vw;
+    overflow: hidden;
+}
+
+.posl{
+    width: 100%;
+}
